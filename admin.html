@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel - Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>Admin Panel - Manage Quiz</h1>
+    
+    <div id="admin">
+        <input type="text" id="question-input" placeholder="Enter a question">
+        <input type="text" id="option1" placeholder="Option 1">
+        <input type="text" id="option2" placeholder="Option 2">
+        <input type="text" id="option3" placeholder="Option 3">
+        <input type="text" id="option4" placeholder="Option 4">
+        <input type="text" id="answer" placeholder="Correct Answer">
+        <button onclick="addQuestion()">Add Question</button>
+    </div>
+
+    <h2>Quiz Questions:</h2>
+    <ul id="question-list"></ul>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>
