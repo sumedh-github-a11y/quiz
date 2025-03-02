@@ -5,28 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Interactive Quiz</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ✅ Video Background (Already Correct) -->
-  <video autoplay muted loop id="bg-video">
-    <source src="background.webm" type="video/webm">
-    <source src="background.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-  <!-- Particle Effect -->
-  <div id="particles-js"></div>
-  <!-- Quiz Container -->
-  <div id="quiz">
-      <h1>Interactive Quiz | By CodePicker</h1>
-      <div id="question"></div>
-      <div id="options"></div>
-      <button id="submit">Submit</button>
-  </div>
-  <a href="admin.html"><button>Admin Panel</button></a>
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="particles.js"></script>
-  <script src="1.js"></script>
+
+    <h1>Student Quiz</h1>
+    
+    <div id="quiz">
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="submit">Submit</button>
+    </div>
+
+    <br>
+
+    <!-- Button to access Admin Panel -->
+    <a href="admin.html">
+        <button style="background: red; color: white; padding: 10px; border: none; cursor: pointer;">
+            Go to Admin Panel
+        </button>
+    </a>
+
+    <script src="1.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Panel - Manage Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>Admin Panel - Manage Quiz</h1>
+
+    <div id="admin">
+        <input type="text" id="question-input" placeholder="Enter a question">
+        <input type="text" id="option1" placeholder="Option 1">
+        <input type="text" id="option2" placeholder="Option 2">
+        <input type="text" id="option3" placeholder="Option 3">
+        <input type="text" id="option4" placeholder="Option 4">
+        <input type="text" id="answer" placeholder="Correct Answer">
+        <button onclick="addQuestion()">Add Question</button>
+    </div>
+
+    <h2>Quiz Questions:</h2>
+    <ul id="question-list"></ul>
+
+    <br>
+
+    <!-- Button to go back to the Quiz Page -->
+    <a href="index.html">
+        <button style="background: blue; color: white; padding: 10px; border: none; cursor: pointer;">
+            Go to Student Quiz
+        </button>
+    </a>
+
+    <script src="admin.js"></script>
+
 </body>
 </html>
